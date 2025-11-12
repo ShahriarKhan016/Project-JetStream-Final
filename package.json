@@ -3,15 +3,6 @@
   "version": "0.1.0",
   "description": "A versatile, lightweight offline+online music player with advanced features",
   "private": true,
-  "workspaces": [
-    "mobile",
-    "web",
-    "desktop",
-    "backend",
-    "blockchain",
-    "ai-engine",
-    "shared"
-  ],
   "scripts": {
     "mobile": "cd mobile && npm start",
     "web": "cd web && npm run dev",

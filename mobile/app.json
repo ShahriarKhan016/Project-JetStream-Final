@@ -32,16 +32,14 @@
         "READ_EXTERNAL_STORAGE",
         "WRITE_EXTERNAL_STORAGE",
         "FOREGROUND_SERVICE",
-        "WAKE_LOCK"
+        "WAKE_LOCK",
+        "DETECT_SCREEN_CAPTURE"
       ]
     },
     "web": {
       "favicon": "./assets/favicon.png",
       "backgroundColor": "#0A0E27"
     },
-    "plugins": [
-      "expo-av",
-      "expo-file-system"
-    ]
+    "plugins": []
   }
 }
