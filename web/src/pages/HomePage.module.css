@@ -1,0 +1,361 @@
+/* Modern HomePage - Spotify/Apple Music Inspired - NO BORDERS *//* Modern HomePage - Spotify/Apple Music Inspired - NO BORDERS */.container {
+
+
+
+.container{max-width:1800px;margin:0 auto;padding:1.5rem 2rem 2rem}  padding: var(--spacing-xl);
+
+
+
+/* Greeting */.container{max-width:1800px;margin:0 auto;padding:1.5rem 2rem 2rem}  padding-bottom: 120px;
+
+.greeting h1{font-size:2rem;font-weight:700;color:#fff;margin:0 0 1.5rem;font-family:'Space Grotesk',sans-serif}
+
+}
+
+/* Quick Picks Grid - Spotify Style */
+
+.quickPicks{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:3rem}/* Greeting */
+
+
+
+.quickPickCard{position:relative;background:rgba(255,255,255,0.06);border-radius:6px;overflow:hidden;cursor:pointer;transition:all 0.2s ease;display:flex;align-items:center;height:80px}.greeting h1{font-size:2rem;font-weight:700;color:#fff;margin:0 0 1.5rem;font-family:'Space Grotesk',sans-serif}.header { margin-bottom: var(--spacing-4xl); }
+
+
+
+.quickPickCard:hover{background:rgba(255,255,255,0.1);transform:scale(1.02)}.greetingSection { position: relative; z-index: 1; }
+
+
+
+.quickPickImage{width:80px;height:80px;flex-shrink:0;position:relative;overflow:hidden}/* Quick Picks Grid - Spotify Style */.greeting { font-size: 48px; font-weight: 700; color: var(--color-text-primary); margin: 0 0 8px 0; }
+
+
+
+.quickPickImage img{width:100%;height:100%;object-fit:cover;mix-blend-mode:overlay;opacity:0.7}.quickPicks{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:3rem}.subGreeting { font-size: 18px; color: var(--color-text-secondary); margin: 0; }
+
+
+
+.quickPickInfo{flex:1;padding:0 1rem}.headerGlow { position: absolute; top: 50%; left: 0; transform: translateY(-50%); width: 400px; height: 400px; background: transparent; pointer-events: none; filter: blur(60px); }
+
+
+
+.quickPickTitle{color:#fff;font-weight:700;font-size:1rem}.quickPickCard{position:relative;background:rgba(255,255,255,0.06);border-radius:6px;overflow:hidden;cursor:pointer;transition:all 0.2s ease;display:flex;align-items:center;height:80px}
+
+
+
+.quickPickPlay{position:absolute;right:1rem;width:48px;height:48px;background:#1ed760;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#000;box-shadow:0 8px 16px rgba(0,0,0,0.4);transition:transform 0.2s ease}.statsGrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; margin-bottom: 64px; }
+
+
+
+.quickPickPlay:hover{transform:scale(1.06)}.quickPickCard:hover{background:rgba(255,255,255,0.1);transform:scale(1.02)}.statCard { display: flex; align-items: center; gap: 24px; padding: 24px; }
+
+
+
+/* Section Header */.statIcon { width: 48px; height: 48px; padding: 16px; border-radius: 8px; background: var(--color-accent-primary); color: var(--color-text-inverse); box-shadow: 0 0 20px rgba(0, 217, 255, 0.3); }
+
+.section{margin-bottom:3rem}
+
+.quickPickImage{width:80px;height:80px;flex-shrink:0;position:relative;overflow:hidden}.statValue { font-size: 24px; font-weight: 700; color: var(--color-text-primary); margin: 0 0 4px 0; }
+
+.sectionHeader{display:flex;justify-content:space-between;align-items:center;margin-bottom:1.25rem}
+
+.statLabel { font-size: 13px; color: var(--color-text-secondary); margin: 0; }
+
+.sectionHeader h2{font-size:1.5rem;font-weight:700;color:#fff;margin:0;font-family:'Space Grotesk',sans-serif}
+
+.quickPickImage img{width:100%;height:100%;object-fit:cover;mix-blend-mode:overlay;opacity:0.7}
+
+.seeAll{color:rgba(255,255,255,0.6);font-weight:600;font-size:0.875rem;text-decoration:none;transition:color 0.2s ease}
+
+.section { margin-bottom: 64px; }
+
+.seeAll:hover{color:#fff}
+
+.quickPickInfo{flex:1;padding:0 1rem}.sectionHeader { display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px; }
+
+/* Horizontal Scroll */
+
+.horizontalScroll{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1.5rem}.aiHeader { display: flex; align-items: center; gap: 16px; }
+
+
+
+/* Album Cards - Clean Apple Music Style */.quickPickTitle{color:#fff;font-weight:700;font-size:1rem}.sparkleIcon { width: 32px; height: 32px; color: var(--color-accent-secondary); }
+
+.albumCard{cursor:pointer;transition:all 0.3s ease}
+
+.sectionTitle { font-size: 30px; font-weight: 700; color: var(--color-text-primary); margin: 0; }
+
+.albumImage{position:relative;width:100%;aspect-ratio:1;border-radius:8px;overflow:hidden;margin-bottom:1rem;background:#181818;box-shadow:0 8px 24px rgba(0,0,0,0.5)}
+
+.quickPickPlay{position:absolute;right:1rem;width:48px;height:48px;background:#1ed760;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#000;box-shadow:0 8px 16px rgba(0,0,0,0.4);transition:transform 0.2s ease}.subtitle { font-size: 13px; color: var(--color-text-secondary); margin: 4px 0 0 0; }
+
+.albumImage img{width:100%;height:100%;object-fit:cover;transition:transform 0.3s ease}
+
+
+
+.albumCard:hover .albumImage img{transform:scale(1.05)}
+
+.quickPickPlay:hover{transform:scale(1.06)}.musicGrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 32px; }
+
+.albumPlay{position:absolute;right:8px;bottom:8px;width:48px;height:48px;background:#1ed760;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#000;box-shadow:0 8px 16px rgba(0,0,0,0.4);transition:all 0.2s ease}
+
+.playlistGrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 32px; }
+
+.albumPlay:hover{transform:scale(1.06)}
+
+/* Section Header */.playlistCard { width: 100%; }
+
+.albumInfo{padding:0}
+
+.section{margin-bottom:3rem}.playlistImage { position: relative; width: 100%; aspect-ratio: 1; border-radius: 12px; overflow: hidden; margin-bottom: 16px; }
+
+.albumTitle{color:#fff;font-weight:600;font-size:0.95rem;margin-bottom:0.25rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+.playlistImage img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; }
+
+.albumArtist{color:rgba(255,255,255,0.6);font-size:0.875rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+.sectionHeader{display:flex;justify-content:space-between;align-items:center;margin-bottom:1.25rem}.playlistOverlay { position: absolute; bottom: 0; left: 0; right: 0; padding: 16px; background: rgba(10, 14, 39, 0.7); }
+
+/* Artist Cards - Circular */
+
+.artistCard{cursor:pointer;transition:all 0.3s ease}.trackCount { font-size: 13px; color: var(--color-text-primary); font-weight: 600; padding: 4px 8px; border-radius: 4px; background: rgba(0, 217, 255, 0.2); backdrop-filter: blur(10px); }
+
+
+
+.artistImage{position:relative;width:100%;aspect-ratio:1;border-radius:50%;overflow:hidden;margin-bottom:1rem;background:#181818;box-shadow:0 8px 24px rgba(0,0,0,0.5)}.sectionHeader h2{font-size:1.5rem;font-weight:700;color:#fff;margin:0;font-family:'Space Grotesk',sans-serif}.playlistInfo { padding: 0 8px; }
+
+
+
+.artistImage img{width:100%;height:100%;object-fit:cover;transition:transform 0.3s ease}.playlistTitle { font-size: 17px; font-weight: 700; color: var(--color-text-primary); margin: 0 0 4px 0; }
+
+
+
+.artistCard:hover .artistImage img{transform:scale(1.05)}.seeAll{color:rgba(255,255,255,0.6);font-weight:600;font-size:0.875rem;text-decoration:none;transition:color 0.2s ease}.playlistDescription { font-size: 13px; color: var(--color-text-secondary); margin: 0; }
+
+
+
+.artistPlay{position:absolute;right:8px;bottom:8px;width:48px;height:48px;background:#1ed760;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#000;box-shadow:0 8px 16px rgba(0,0,0,0.4);transition:all 0.2s ease}
+
+
+
+.artistPlay:hover{transform:scale(1.06)}.seeAll:hover{color:#fff}.particlesContainer { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; overflow: hidden; }
+
+
+
+.artistName{color:#fff;font-weight:600;font-size:0.95rem;margin-bottom:0.25rem;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.particle { position: absolute; width: 4px; height: 4px; border-radius: 50%; background: var(--color-accent-primary); box-shadow: 0 0 10px rgba(0, 217, 255, 0.3); }
+
+
+
+.artistType{color:rgba(255,255,255,0.6);font-size:0.875rem;text-align:center}/* Horizontal Scroll */
+
+.horizontalScroll{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1.5rem}
+
+/* Playlist Cards */
+
+.playlistCard{cursor:pointer;transition:all 0.3s ease}/* Album Cards - Clean Apple Music Style */
+
+.albumCard{cursor:pointer;transition:all 0.3s ease}
+
+.playlistImage{position:relative;width:100%;aspect-ratio:1;border-radius:8px;overflow:hidden;margin-bottom:1rem;background:#181818;box-shadow:0 8px 24px rgba(0,0,0,0.5)}
+
+.albumImage{position:relative;width:100%;aspect-ratio:1;border-radius:8px;overflow:hidden;margin-bottom:1rem;background:#181818;box-shadow:0 8px 24px rgba(0,0,0,0.5)}
+
+.playlistImage img{width:100%;height:100%;object-fit:cover;transition:transform 0.3s ease}
+
+.albumImage img{width:100%;height:100%;object-fit:cover;transition:transform 0.3s ease}
+
+.playlistCard:hover .playlistImage img{transform:scale(1.05)}
+
+.albumCard:hover .albumImage img{transform:scale(1.05)}
+
+.playlistPlay{position:absolute;right:8px;bottom:8px;width:48px;height:48px;background:#1ed760;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#000;box-shadow:0 8px 16px rgba(0,0,0,0.4);transition:all 0.2s ease}
+
+.albumPlay{position:absolute;right:8px;bottom:8px;width:48px;height:48px;background:#1ed760;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#000;box-shadow:0 8px 16px rgba(0,0,0,0.4);transition:all 0.2s ease}
+
+.playlistPlay:hover{transform:scale(1.06)}
+
+.albumPlay:hover{transform:scale(1.06)}
+
+.playlistInfo{padding:0}
+
+.albumInfo{padding:0}
+
+.playlistTitle{color:#fff;font-weight:600;font-size:0.95rem;margin-bottom:0.25rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+.albumTitle{color:#fff;font-weight:600;font-size:0.95rem;margin-bottom:0.25rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+.playlistSubtitle{color:rgba(255,255,255,0.6);font-size:0.875rem;line-height:1.4}
+
+.albumArtist{color:rgba(255,255,255,0.6);font-size:0.875rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* Responsive */
+
+@media(max-width:1400px){.quickPicks{grid-template-columns:repeat(2,1fr)}.horizontalScroll{grid-template-columns:repeat(auto-fill,minmax(160px,1fr))}}/* Artist Cards - Circular */
+
+.artistCard{cursor:pointer;transition:all 0.3s ease}
+
+@media(max-width:768px){.container{padding:1rem}.greeting h1{font-size:1.75rem}.quickPicks{grid-template-columns:1fr;gap:0.75rem}.quickPickCard{height:70px}.quickPickImage{width:70px;height:70px}.quickPickPlay{width:40px;height:40px;right:0.75rem}.sectionHeader h2{font-size:1.25rem}.horizontalScroll{grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:1rem}.albumPlay,.artistPlay,.playlistPlay{width:40px;height:40px}}
+
+.artistImage{position:relative;width:100%;aspect-ratio:1;border-radius:50%;overflow:hidden;margin-bottom:1rem;background:#181818;box-shadow:0 8px 24px rgba(0,0,0,0.5)}
+
+.artistImage img{width:100%;height:100%;object-fit:cover;transition:transform 0.3s ease}
+
+.artistCard:hover .artistImage img{transform:scale(1.05)}
+
+.artistPlay{position:absolute;right:8px;bottom:8px;width:48px;height:48px;background:#1ed760;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#000;box-shadow:0 8px 16px rgba(0,0,0,0.4);transition:all 0.2s ease}
+
+.artistPlay:hover{transform:scale(1.06)}
+
+.artistName{color:#fff;font-weight:600;font-size:0.95rem;margin-bottom:0.25rem;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+.artistType{color:rgba(255,255,255,0.6);font-size:0.875rem;text-align:center}
+
+/* Playlist Cards */
+.playlistCard{cursor:pointer;transition:all 0.3s ease}
+
+.playlistImage{position:relative;width:100%;aspect-ratio:1;border-radius:8px;overflow:hidden;margin-bottom:1rem;background:#181818;box-shadow:0 8px 24px rgba(0,0,0,0.5)}
+
+.playlistImage img{width:100%;height:100%;object-fit:cover;transition:transform 0.3s ease}
+
+.playlistCard:hover .playlistImage img{transform:scale(1.05)}
+
+.playlistPlay{position:absolute;right:8px;bottom:8px;width:48px;height:48px;background:#1ed760;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#000;box-shadow:0 8px 16px rgba(0,0,0,0.4);transition:all 0.2s ease}
+
+.playlistPlay:hover{transform:scale(1.06)}
+
+.playlistInfo{padding:0}
+
+.playlistTitle{color:#fff;font-weight:600;font-size:0.95rem;margin-bottom:0.25rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+.playlistSubtitle{color:rgba(255,255,255,0.6);font-size:0.875rem;line-height:1.4}
+
+/* Responsive - Tablet */
+@media(max-width:1400px){
+  .quickPicks{
+    grid-template-columns:repeat(2,1fr);
+  }
+  .horizontalScroll{
+    grid-template-columns:repeat(auto-fill,minmax(165px,1fr));
+  }
+}
+
+@media(max-width:1024px){
+  .container{
+    padding:1.25rem;
+  }
+  .greeting h1{
+    font-size:1.875rem;
+  }
+  .horizontalScroll{
+    grid-template-columns:repeat(auto-fill,minmax(155px,1fr));
+    gap:1.25rem;
+  }
+  .sectionHeader h2{
+    font-size:1.375rem;
+  }
+}
+
+/* Responsive - Mobile */
+@media(max-width:768px){
+  .container{
+    padding:1rem;
+    padding-bottom:140px;
+  }
+  .greeting h1{
+    font-size:1.5rem;
+    margin-bottom:1rem;
+  }
+  .quickPicks{
+    grid-template-columns:1fr;
+    gap:0.75rem;
+    margin-bottom:2rem;
+  }
+  .quickPickCard{
+    height:70px;
+  }
+  .quickPickImage{
+    width:70px;
+    height:70px;
+  }
+  .quickPickTitle{
+    font-size:0.875rem;
+  }
+  .quickPickPlay{
+    width:40px;
+    height:40px;
+    right:0.75rem;
+  }
+  .section{
+    margin-bottom:2rem;
+  }
+  .sectionHeader{
+    margin-bottom:1rem;
+  }
+  .sectionHeader h2{
+    font-size:1.125rem;
+  }
+  .seeAll{
+    font-size:0.8rem;
+  }
+  .horizontalScroll{
+    grid-template-columns:repeat(auto-fill,minmax(135px,1fr));
+    gap:1rem;
+  }
+  .albumTitle,
+  .artistName,
+  .playlistTitle{
+    font-size:0.875rem;
+  }
+  .albumArtist,
+  .artistType,
+  .playlistSubtitle{
+    font-size:0.75rem;
+  }
+  .albumPlay,
+  .artistPlay,
+  .playlistPlay{
+    width:38px;
+    height:38px;
+  }
+}
+
+@media(max-width:640px){
+  .container{
+    padding:0.75rem;
+  }
+  .greeting h1{
+    font-size:1.375rem;
+  }
+  .horizontalScroll{
+    grid-template-columns:repeat(auto-fill,minmax(120px,1fr));
+    gap:0.875rem;
+  }
+  .quickPickCard{
+    height:65px;
+  }
+  .quickPickImage{
+    width:65px;
+    height:65px;
+  }
+}
+
+@media(max-width:480px){
+  .quickPicks{
+    gap:0.625rem;
+  }
+  .horizontalScroll{
+    grid-template-columns:repeat(2,1fr);
+    gap:0.75rem;
+  }
+}
+
+/* Prevent horizontal overflow */
+@media(max-width:968px){
+  .container,
+  .quickPicks,
+  .horizontalScroll,
+  .section{
+    max-width:100%;
+    overflow-x:hidden;
+  }
+}

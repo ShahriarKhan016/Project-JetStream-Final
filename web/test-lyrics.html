@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lyrics API Test</title>
+</head>
+<body>
+    <h1>Lyrics API Test</h1>
+    <button onclick="testLyrics()">Test: Coldplay - Yellow</button>
+    <pre id="result"></pre>
+
+    <script>
+        async function testLyrics() {
+            const result = document.getElementById('result');
+            result.textContent = 'Loading...';
+            
+            try {
+                const artist = 'Coldplay';
+                const title = 'Yellow';
+                const url = `https://api.lyrics.ovh/v1/${encodeURIComponent(artist)}/${encodeURIComponent(title)}`;
+                
+                result.textContent = `Fetching from: ${url}\n\nWaiting for response...`;
+                
+                const response = await fetch(url);
+                result.textContent += `\n\nStatus: ${response.status}`;
+                
+                if (!response.ok) {
+                    result.textContent += `\n\nError: ${response.statusText}`;
+                    return;
+                }
+                
+                const data = await response.json();
+                result.textContent = `Success!\n\nLyrics:\n${data.lyrics}`;
+                
+            } catch (error) {
+                result.textContent = `Error: ${error.message}\n\n${error.stack}`;
+            }
+        }
+    </script>
+</body>
+</html>

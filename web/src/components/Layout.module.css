@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+.layout{display:flex;flex-direction:column;height:100vh;overflow:hidden;background:#0a0a0f;font-family:'Inter',sans-serif}
+
+/* Top Navbar */
+.navbar{position:relative;z-index:100;background:rgba(10,10,15,0.8);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,0.05)}.navContent{max-width:1800px;margin:0 auto;padding:0 2rem;height:70px;display:flex;align-items:center;gap:3rem}
+
+/* Logo */
+.logo{display:flex;align-items:center;gap:0.75rem;text-decoration:none;transition:transform 0.2s ease}.logo:hover{transform:scale(1.05)}.logoIcon{width:40px;height:40px;background:#1ed760;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#000;box-shadow:0 4px 20px rgba(30,215,96,0.4)}.logoText{font-size:1.5rem;font-weight:800;font-family:'Space Grotesk',sans-serif;color:#fff;letter-spacing:-0.5px}
+
+/* Nav Links */
+.navLinks{flex:1;display:flex;align-items:center;gap:0.5rem}.navLink{position:relative;display:flex;align-items:center;gap:0.5rem;padding:0.75rem 1.25rem;border-radius:12px;color:rgba(255,255,255,0.6);text-decoration:none;font-size:0.95rem;font-weight:600;transition:all 0.2s ease}.navLink:hover{color:#fff;background:rgba(255,255,255,0.05)}.navLink.active{color:#fff}.activeIndicator{position:absolute;bottom:-1px;left:0;right:0;height:3px;background:#1ed760;border-radius:3px 3px 0 0}
+
+/* Nav Actions */
+.navActions{display:flex;align-items:center;gap:0.75rem}.actionButton{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:0.65rem;color:rgba(255,255,255,0.7);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.2s ease}.actionButton:hover{background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.2);color:#fff;transform:translateY(-1px)}
+
+/* Main Content */
+.main{flex:1;overflow-y:auto;overflow-x:hidden;position:relative}.content{max-width:1800px;margin:0 auto;padding:2rem;padding-bottom:140px}
+
+/* Player Bar */
+.playerBar{position:fixed;bottom:0;left:0;right:0;z-index:99;background:rgba(15,15,20,0.95);backdrop-filter:blur(30px);border-top:1px solid rgba(255,255,255,0.08);box-shadow:0 -4px 30px rgba(0,0,0,0.3)}.playerContent{max-width:1800px;margin:0 auto;padding:1rem 2rem;display:grid;grid-template-columns:1fr 2fr 1fr;gap:2rem;align-items:center}
+
+/* Track Info */
+.trackInfo{display:flex;align-items:center;gap:1rem}.trackImage{width:56px;height:56px;border-radius:8px;overflow:hidden;flex-shrink:0}.trackImage img{width:100%;height:100%;object-fit:cover}.trackDetails{flex:1;min-width:0}.trackName{color:#fff;font-weight:600;font-size:0.95rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.trackArtist{color:rgba(255,255,255,0.5);font-size:0.85rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.likeButton{background:transparent;border:none;color:rgba(255,255,255,0.5);cursor:pointer;padding:0.5rem;border-radius:8px;transition:all 0.2s ease;display:flex;align-items:center;justify-content:center}.likeButton:hover{color:#1ed760;background:rgba(30,215,96,0.1)}.likeButton.liked{color:#1ed760}.likeButton:disabled{opacity:0.3;cursor:not-allowed}
+
+/* Player Controls */
+.playerControls{display:flex;flex-direction:column;gap:0.75rem;align-items:center}.controlButtons{display:flex;align-items:center;gap:1rem}.controlButton{background:transparent;border:none;color:rgba(255,255,255,0.7);cursor:pointer;padding:0.5rem;border-radius:8px;transition:all 0.2s ease;display:flex;align-items:center;justify-content:center}.controlButton:hover{color:#fff;background:rgba(255,255,255,0.1);transform:scale(1.1)}.controlButton.active{color:#1ed760}.playButton{width:48px;height:48px;background:#1ed760;border:none;border-radius:50%;color:#000;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.2s ease;box-shadow:0 4px 20px rgba(30,215,96,0.4)}.playButton:hover{transform:scale(1.05);background:#1fdf64;box-shadow:0 6px 25px rgba(30,215,96,0.6)}.playButton:active{transform:scale(0.98)}
+
+/* Progress Bar */
+.progressBar{display:flex;align-items:center;gap:1rem;width:100%;max-width:600px}.timeText{color:rgba(255,255,255,0.5);font-size:0.8rem;font-weight:500;min-width:35px;text-align:center}.progressTrack{flex:1;height:4px;background:rgba(255,255,255,0.1);border-radius:2px;cursor:pointer;position:relative;overflow:hidden}.progressFill{height:100%;background:#1ed760;border-radius:2px;position:relative}.progressFill::after{content:'';position:absolute;right:0;top:50%;transform:translateY(-50%);width:12px;height:12px;background:#fff;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,0.3)}
+
+/* Volume Control */
+.volumeControl{display:flex;align-items:center;gap:1rem;justify-content:flex-end}.volumeControl svg{color:rgba(255,255,255,0.7);flex-shrink:0}.volumeSlider{width:100px}.volumeTrack{height:4px;background:rgba(255,255,255,0.1);border-radius:2px;cursor:pointer;position:relative}.volumeFill{height:100%;background:#1ed760;border-radius:2px}
+
+/* Scrollbar */
+.main::-webkit-scrollbar{width:8px}.main::-webkit-scrollbar-track{background:transparent}.main::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.1);border-radius:4px}.main::-webkit-scrollbar-thumb:hover{background:rgba(255,255,255,0.2)}
+
+/* Queue Button */
+.queueButton{position:relative}.queueBadge{position:absolute;top:-4px;right:-4px;background:#1ed760;color:#000;font-size:0.7rem;font-weight:700;padding:0.15rem 0.4rem;border-radius:10px;min-width:18px;text-align:center;box-shadow:0 2px 8px rgba(30,215,96,0.5)}
+
+/* Responsive - Tablet */
+@media(max-width:1200px){
+  .playerContent{
+    grid-template-columns:1fr 1.5fr 0.8fr;
+    gap:1.5rem;
+  }
+  .content{
+    padding:1.5rem;
+  }
+}
+
+@media(max-width:1024px){
+  .navContent{
+    gap:2rem;
+    padding:0 1.5rem;
+  }
+  .navLink{
+    font-size:0.9rem;
+    padding:0.6rem 1rem;
+  }
+  .content{
+    padding:1.25rem;
+    padding-bottom:160px;
+  }
+}
+
+/* Responsive - Mobile */
+@media(max-width:968px){
+  .navContent{
+    gap:1rem;
+    padding:0 1rem;
+    height:60px;
+  }
+  .navLinks{
+    gap:0.25rem;
+  }
+  .navLink{
+    padding:0.5rem 0.75rem;
+    font-size:0.85rem;
+  }
+  .navLink span{
+    display:none;
+  }
+  .logoText{
+    font-size:1.25rem;
+  }
+  
+  /* Mobile Player Bar - Compact Layout */
+  .playerBar{
+    padding:0.5rem 0 0;
+  }
+  .playerContent{
+    grid-template-columns:1fr;
+    gap:0.75rem;
+    padding:0 1rem 1rem;
+  }
+  
+  /* Mobile Track Info - Horizontal */
+  .trackInfo{
+    order:1;
+    gap:0.75rem;
+  }
+  .trackImage{
+    width:48px;
+    height:48px;
+  }
+  .trackName{
+    font-size:0.875rem;
+  }
+  .trackArtist{
+    font-size:0.75rem;
+  }
+  
+  /* Mobile Controls - Compact */
+  .playerControls{
+    order:3;
+    gap:0.5rem;
+  }
+  .controlButtons{
+    gap:0.75rem;
+  }
+  .controlButton{
+    padding:0.4rem;
+  }
+  .playButton{
+    width:42px;
+    height:42px;
+  }
+  .progressBar{
+    max-width:100%;
+    order:2;
+  }
+  .timeText{
+    font-size:0.7rem;
+    min-width:30px;
+  }
+  
+  /* Hide volume on mobile */
+  .volumeControl{
+    display:none;
+  }
+  
+  /* Hide some action buttons on mobile */
+  .navActions .actionButton:nth-child(n+3){
+    display:none;
+  }
+}
+
+@media(max-width:768px){
+  .logoText{
+    display:none;
+  }
+  .content{
+    padding:1rem;
+    padding-bottom:140px;
+  }
+  .navActions{
+    gap:0.5rem;
+  }
+  .actionButton{
+    padding:0.5rem;
+  }
+}
+
+@media(max-width:640px){
+  .navContent{
+    padding:0 0.75rem;
+  }
+  .content{
+    padding:0.75rem;
+    padding-bottom:130px;
+  }
+  .trackInfo{
+    gap:0.5rem;
+  }
+  .trackImage{
+    width:44px;
+    height:44px;
+  }
+  .controlButtons{
+    gap:0.5rem;
+  }
+  .navActions{
+    gap:0.375rem;
+  }
+}
+
+/* Small phones */
+@media(max-width:375px){
+  .logoIcon{
+    width:36px;
+    height:36px;
+  }
+  .navContent{
+    padding:0 0.5rem;
+  }
+  .content{
+    padding:0.5rem;
+    padding-bottom:120px;
+  }
+  .playerContent{
+    padding:0 0.75rem 0.75rem;
+  }
+  .trackImage{
+    width:40px;
+    height:40px;
+  }
+  .playButton{
+    width:38px;
+    height:38px;
+  }
+  .sectionHeader h2{
+    font-size:1.25rem;
+  }
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .navLink:hover,
+  .actionButton:hover,
+  .controlButton:hover {
+    transform: none;
+  }
+}

@@ -1,0 +1,130 @@
+/* Container */
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Button */
+.button {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.button.active {
+  background: rgba(30, 215, 96, 0.15);
+  border-color: rgba(30, 215, 96, 0.4);
+  color: #1ed760;
+}
+
+.buttonLabel {
+  min-width: 55px;
+  text-align: center;
+}
+
+/* Dropdown */
+.dropdown {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, rgba(26, 26, 36, 0.98), rgba(15, 15, 25, 0.98));
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 0.5rem;
+  min-width: 180px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+.dropdownHeader {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+/* Options */
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.option {
+  background: transparent;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.option:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+.optionActive {
+  background: rgba(30, 215, 96, 0.15);
+  color: #1ed760;
+  font-weight: 700;
+}
+
+.optionActive:hover {
+  background: rgba(30, 215, 96, 0.2);
+}
+
+.optionLabel {
+  flex: 1;
+  text-align: left;
+}
+
+.checkmark {
+  color: #1ed760;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .button {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.8rem;
+  }
+
+  .buttonLabel {
+    min-width: 50px;
+  }
+
+  .dropdown {
+    min-width: 160px;
+  }
+}

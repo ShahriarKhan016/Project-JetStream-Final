@@ -1,0 +1,68 @@
+{
+  "name": "jetstream",
+  "version": "0.1.0",
+  "description": "A versatile, lightweight offline+online music player with advanced features",
+  "private": true,
+  "workspaces": [
+    "mobile",
+    "web",
+    "desktop",
+    "backend",
+    "blockchain",
+    "ai-engine",
+    "shared"
+  ],
+  "scripts": {
+    "mobile": "cd mobile && npm start",
+    "web": "cd web && npm run dev",
+    "desktop": "cd desktop && npm start",
+    "backend": "cd backend && npm run dev",
+    "blockchain": "cd blockchain && npm run compile",
+    "ai": "cd ai-engine && npm start",
+    "install-all": "npm install && npm run install:mobile && npm run install:web && npm run install:backend",
+    "install:mobile": "cd mobile && npm install",
+    "install:web": "cd web && npm install",
+    "install:backend": "cd backend && npm install",
+    "clean": "rm -rf node_modules && rm -rf */node_modules",
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "build": "npm run build:mobile && npm run build:web && npm run build:desktop",
+    "build:mobile": "cd mobile && npm run build",
+    "build:web": "cd web && npm run build",
+    "build:desktop": "cd desktop && npm run build"
+  },
+  "keywords": [
+    "music-player",
+    "offline-music",
+    "streaming",
+    "react-native",
+    "blockchain",
+    "ai",
+    "ar-vr",
+    "cross-platform"
+  ],
+  "author": "JetStream Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.11",
+    "@types/node": "^20.10.6",
+    "@typescript-eslint/eslint-plugin": "^6.17.0",
+    "@typescript-eslint/parser": "^6.17.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.1.1",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "dependencies": {
+    "@jridgewell/sourcemap-codec": "^1.5.5"
+  }
+}

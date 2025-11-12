@@ -1,0 +1,31 @@
+.container{max-width:1000px;margin:0 auto;padding-bottom:4rem}
+
+/* Header */
+.header{margin-bottom:3rem}.title{font-size:3rem;font-weight:900;color:#fff;margin:0 0 0.5rem;font-family:'Space Grotesk',sans-serif;letter-spacing:-2px}.subtitle{font-size:1.1rem;color:rgba(255,255,255,0.5);margin:0}
+
+/* Settings Grid */
+.settingsGrid{display:grid;gap:1.5rem;margin-bottom:2rem}.card{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:2rem}.cardTitle{font-size:1.25rem;font-weight:700;color:#fff;display:flex;align-items:center;gap:0.75rem;margin:0 0 1.5rem;font-family:'Space Grotesk',sans-serif}
+
+/* Settings List */
+.settingsList{display:flex;flex-direction:column;gap:1.5rem}.settingItem{display:flex;justify-content:space-between;align-items:center;gap:2rem}.settingInfo{flex:1}.settingLabel{font-size:1rem;font-weight:600;color:#fff;margin-bottom:0.25rem}.settingDesc{font-size:0.9rem;color:rgba(255,255,255,0.5)}
+
+/* Toggle Switch */
+.toggle{position:relative;display:inline-block;width:48px;height:26px;cursor:pointer}.toggle input{opacity:0;width:0;height:0}.toggleSlider{position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);border-radius:26px;transition:all 0.3s ease}.toggleSlider:before{content:"";position:absolute;height:18px;width:18px;left:3px;bottom:3px;background:#fff;border-radius:50%;transition:all 0.3s ease}.toggle input:checked+.toggleSlider{background:#1ed760;border-color:transparent}.toggle input:checked+.toggleSlider:before{transform:translateX(22px)}.toggle:hover .toggleSlider{border-color:rgba(255,255,255,0.3)}
+
+/* Select */
+.select{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.15);border-radius:10px;padding:0.75rem 1rem;color:#fff;font-size:0.95rem;font-weight:500;cursor:pointer;outline:none;transition:all 0.2s ease;min-width:180px}.select:hover{background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.25)}.select:focus{background:rgba(255,255,255,0.1);border-color:rgba(99,102,241,0.5)}.select option{background:#1a1a24;color:#fff}
+
+/* Slider */
+.sliderContainer{display:flex;align-items:center;gap:1rem;min-width:200px}.slider{flex:1;height:6px;border-radius:3px;background:rgba(255,255,255,0.1);outline:none;transition:all 0.2s ease;-webkit-appearance:none}.slider::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:18px;height:18px;border-radius:50%;background:#1ed760;cursor:pointer;transition:all 0.2s ease}.slider::-webkit-slider-thumb:hover{background:#22ff6f;transform:scale(1.1)}.slider::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:#1ed760;cursor:pointer;border:none;transition:all 0.2s ease}.slider::-moz-range-thumb:hover{background:#22ff6f;transform:scale(1.1)}.slider:hover{background:rgba(255,255,255,0.15)}.sliderValue{font-size:0.95rem;font-weight:600;color:#fff;min-width:35px;text-align:right}
+
+/* Setting Value */
+.settingValue{font-size:0.95rem;font-weight:600;color:#1ed760}
+
+/* Actions */
+.actions{display:flex;gap:1rem;margin-bottom:2rem;flex-wrap:wrap}.secondaryButton{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.15);border-radius:10px;padding:0.875rem 1.5rem;color:rgba(255,255,255,0.8);font-weight:600;cursor:pointer;transition:all 0.2s ease;font-size:0.95rem;display:flex;align-items:center;gap:0.5rem}.secondaryButton:hover{background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.3);color:#fff;transform:translateY(-1px)}.dangerButton{background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.3);border-radius:10px;padding:0.875rem 1.5rem;color:#ef4444;font-weight:600;cursor:pointer;transition:all 0.2s ease;font-size:0.95rem;display:flex;align-items:center;gap:0.5rem}.dangerButton:hover{background:rgba(239,68,68,0.2);border-color:rgba(239,68,68,0.5);transform:translateY(-1px)}
+
+/* Footer */
+.footer{border-top:1px solid rgba(255,255,255,0.08);padding-top:2rem}.footerContent{display:flex;align-items:center;gap:0.75rem;color:rgba(255,255,255,0.4);font-size:0.9rem}.footerDot{color:rgba(255,255,255,0.2)}.footerLink{color:rgba(255,255,255,0.4);text-decoration:none;transition:color 0.2s ease}.footerLink:hover{color:rgba(255,255,255,0.7)}
+
+/* Responsive */
+@media(max-width:768px){.title{font-size:2.5rem}.settingItem{flex-direction:column;align-items:flex-start;gap:1rem}.select{min-width:100%}.actions{flex-direction:column}.dangerButton{width:100%}}

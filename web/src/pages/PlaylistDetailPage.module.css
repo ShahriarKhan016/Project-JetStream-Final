@@ -1,0 +1,47 @@
+/* Container */
+.container{max-width:1400px;margin:0 auto;padding-bottom:6rem}
+
+/* Header */
+.header{margin-bottom:2rem}.backBtn{background:transparent;border:none;color:rgba(255,255,255,0.7);font-size:0.9rem;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:0.5rem;padding:0.5rem 1rem;border-radius:8px;transition:all 0.2s ease;margin-bottom:2rem}.backBtn:hover{background:rgba(255,255,255,0.05);color:#fff}.headerContent{display:flex;gap:2rem;align-items:flex-end;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:2rem}
+
+/* Cover Art */
+.coverArt{width:200px;height:200px;border-radius:12px;overflow:hidden;flex-shrink:0;box-shadow:0 8px 32px rgba(0,0,0,0.3)}.coverArt img{width:100%;height:100%;object-fit:cover}.placeholderCover{width:100%;height:100%;background:linear-gradient(135deg,rgba(30,215,96,0.2),rgba(0,217,255,0.2));display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.5)}
+
+/* Playlist Info */
+.playlistInfo{flex:1}.label{font-size:0.75rem;font-weight:700;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:1px;margin-bottom:0.5rem;display:block}.title{font-size:3rem;font-weight:900;color:#fff;margin:0 0 1rem;font-family:'Space Grotesk',sans-serif;letter-spacing:-2px;line-height:1}.description{font-size:1rem;color:rgba(255,255,255,0.7);margin:0 0 1rem;line-height:1.5}.meta{display:flex;gap:0.75rem;font-size:0.9rem;color:rgba(255,255,255,0.6);font-weight:600}
+
+/* Actions */
+.actions{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap}.playAllButton{background:#1ed760;border:none;border-radius:100px;padding:0.875rem 2rem;color:#000;font-weight:700;font-size:1rem;cursor:pointer;display:flex;align-items:center;gap:0.5rem;transition:all 0.2s ease}.playAllButton:hover:not(:disabled){background:#22ff6f;transform:scale(1.05)}.playAllButton:disabled{opacity:0.5;cursor:not-allowed}.editButton{background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);border-radius:100px;padding:0.875rem 1.5rem;color:#fff;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:0.5rem;transition:all 0.2s ease}.editButton:hover{background:rgba(255,255,255,0.15);border-color:rgba(255,255,255,0.3)}.shareButtonWrapper{position:relative}.shareButton,.duplicateButton{background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);border-radius:100px;padding:0.875rem 1.5rem;color:#fff;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:0.5rem;transition:all 0.2s ease}.shareButton:hover,.duplicateButton:hover{background:rgba(255,255,255,0.15);border-color:rgba(255,255,255,0.3)}.shareTooltip{position:absolute;top:-40px;left:50%;transform:translateX(-50%);background:#1ed760;color:#000;padding:0.5rem 1rem;border-radius:8px;font-size:0.85rem;font-weight:600;white-space:nowrap;animation:fadeInOut 2s ease-in-out}@keyframes fadeInOut{0%,100%{opacity:0}10%,90%{opacity:1}}
+
+/* Track List */
+.trackList{background:rgba(255,255,255,0.02);border-radius:12px;padding:1rem;margin-top:2rem}.trackListHeader{display:grid;grid-template-columns:40px 50px 1fr 1fr 80px 60px;gap:1rem;padding:0.75rem 1rem;border-bottom:1px solid rgba(255,255,255,0.08);margin-bottom:0.5rem}.headerCol{font-size:0.8rem;font-weight:600;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:0.5px;display:flex;align-items:center}
+
+/* Track Item */
+.trackItem{display:grid;grid-template-columns:40px 50px 1fr 1fr 80px 60px;gap:1rem;padding:0.75rem 1rem;border-radius:8px;transition:all 0.2s ease;cursor:pointer;position:relative;user-select:none}.trackItem:hover{background:rgba(255,255,255,0.05)}.trackItem.playing{background:rgba(30,215,96,0.1)}.trackItem.playing .trackTitle{color:#1ed760}.dragHandle{display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.3);cursor:grab}.dragHandle:active{cursor:grabbing}
+
+/* Track Number */
+.trackNumber{display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.5);font-weight:600;position:relative}.trackNumber span{display:block}.trackPlayButton{display:none;position:absolute;background:#1ed760;border:none;border-radius:50%;width:32px;height:32px;align-items:center;justify-content:center;color:#000;cursor:pointer;transition:all 0.2s ease}.trackPlayButton:hover{transform:scale(1.1)}.trackItem:hover .trackNumber span{display:none}.trackItem:hover .trackPlayButton{display:flex}.playingIndicator{color:#1ed760;font-size:1.2rem;animation:pulse 1.5s ease-in-out infinite}@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.5}}
+
+/* Track Info */
+.trackInfo{display:flex;align-items:center;gap:0.75rem}.trackInfo img{width:40px;height:40px;border-radius:4px;object-fit:cover}.trackTitle{color:#fff;font-weight:600;font-size:0.95rem;margin-bottom:0.25rem}.trackArtist{color:rgba(255,255,255,0.6);font-size:0.85rem}
+
+/* Track Album */
+.trackAlbum{color:rgba(255,255,255,0.6);font-size:0.9rem;display:flex;align-items:center}
+
+/* Track Duration */
+.trackDuration{color:rgba(255,255,255,0.6);font-size:0.9rem;display:flex;align-items:center;justify-content:center}
+
+/* Track Actions */
+.trackActions{display:flex;align-items:center;justify-content:center;gap:0.5rem;opacity:0;transition:opacity 0.2s ease}.trackItem:hover .trackActions{opacity:1}.removeButton{background:transparent;border:none;color:rgba(255,255,255,0.5);cursor:pointer;padding:0.5rem;border-radius:4px;transition:all 0.2s ease}.removeButton:hover{background:rgba(239,68,68,0.2);color:#ef4444}
+
+/* Empty State */
+.emptyState{text-align:center;padding:4rem 2rem;color:rgba(255,255,255,0.5)}.emptyState svg{margin-bottom:1rem;opacity:0.5}.emptyState h3{font-size:1.5rem;color:#fff;margin-bottom:0.5rem}.emptyState p{font-size:0.95rem}
+
+/* Not Found */
+.notFound{text-align:center;padding:4rem 2rem;color:rgba(255,255,255,0.5)}.notFound svg{margin-bottom:1.5rem;opacity:0.5}.notFound h2{font-size:2rem;color:#fff;margin-bottom:1.5rem}.backButton{background:#1ed760;border:none;border-radius:100px;padding:0.875rem 2rem;color:#000;font-weight:700;cursor:pointer;transition:all 0.2s ease}.backButton:hover{background:#22ff6f;transform:translateY(-2px)}
+
+/* Modal */
+.modalOverlay{position:fixed;inset:0;background:rgba(0,0,0,0.8);backdrop-filter:blur(4px);z-index:1000}.modal{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:linear-gradient(135deg,rgba(26,26,36,0.95),rgba(15,15,25,0.95));border:1px solid rgba(255,255,255,0.1);border-radius:20px;padding:2rem;max-width:500px;width:90%;z-index:1001;box-shadow:0 20px 60px rgba(0,0,0,0.5)}.modalHeader{margin-bottom:1.5rem}.modalHeader h2{font-size:1.5rem;font-weight:700;color:#fff;margin:0;font-family:'Space Grotesk',sans-serif}.modalBody{display:flex;flex-direction:column;gap:1.25rem}.formGroup{display:flex;flex-direction:column;gap:0.5rem}.formGroup label{color:rgba(255,255,255,0.7);font-weight:600;font-size:0.9rem}.formGroup input,.formGroup textarea{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.15);border-radius:10px;padding:0.875rem 1rem;color:#fff;font-size:0.95rem;font-family:inherit;outline:none;transition:all 0.2s ease;resize:vertical}.formGroup input:focus,.formGroup textarea:focus{background:rgba(255,255,255,0.08);border-color:rgba(99,102,241,0.5)}.formGroup input::placeholder,.formGroup textarea::placeholder{color:rgba(255,255,255,0.3)}.orDivider{display:flex;align-items:center;gap:1rem;margin:0.5rem 0}.orDivider::before,.orDivider::after{content:'';flex:1;height:1px;background:rgba(255,255,255,0.15)}.orDivider span{color:rgba(255,255,255,0.5);font-size:0.85rem}.fileUploadLabel{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.15);border-radius:10px;padding:0.875rem 1rem;color:rgba(255,255,255,0.7);font-weight:600;font-size:0.9rem;cursor:pointer;text-align:center;transition:all 0.2s ease}.fileUploadLabel:hover{background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.3)}.coverPreview{margin-top:1rem;width:150px;height:150px;border-radius:8px;overflow:hidden;border:2px solid rgba(255,255,255,0.15)}.coverPreview img{width:100%;height:100%;object-fit:cover}.modalFooter{display:flex;gap:1rem;margin-top:1.5rem;justify-content:flex-end}.cancelButton{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.15);border-radius:10px;padding:0.875rem 1.5rem;color:rgba(255,255,255,0.7);font-weight:600;cursor:pointer;transition:all 0.2s ease}.cancelButton:hover{background:rgba(255,255,255,0.08);color:#fff}.saveButton{background:#1ed760;border:none;border-radius:10px;padding:0.875rem 1.5rem;color:#000;font-weight:600;cursor:pointer;transition:all 0.2s ease}.saveButton:hover{background:#22ff6f;transform:translateY(-1px)}
+
+/* Responsive */
+@media(max-width:1024px){.title{font-size:2.5rem}.headerContent{flex-direction:column;align-items:center;text-align:center}.coverArt{width:180px;height:180px}.actions{justify-content:center}}@media(max-width:768px){.title{font-size:2rem}.headerContent{padding:1.5rem}.coverArt{width:150px;height:150px}.trackListHeader{display:none}.trackItem{grid-template-columns:40px 40px 1fr 60px 40px;gap:0.5rem}.trackAlbum{display:none}.modal{padding:1.5rem;max-width:95%}.modalFooter{flex-direction:column}.modalFooter button{width:100%}.actions{gap:0.5rem}.shareButton,.duplicateButton{padding:0.75rem 1rem;font-size:0.9rem}}
