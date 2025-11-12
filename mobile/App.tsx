@@ -12,7 +12,7 @@ import { StyleSheet } from 'react-native';
 
 import AppNavigator from './src/navigation/AppNavigator';
 import { store } from './src/store';
-import { colors } from '@/theme';
+import { colors } from './src/theme';
 
 export default function App() {
   return (

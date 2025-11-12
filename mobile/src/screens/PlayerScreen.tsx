@@ -4,7 +4,7 @@
 
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import { colors, typography } from '@/theme';
+import { colors, typography } from '../theme';
 
 export default function PlayerScreen() {
   return (

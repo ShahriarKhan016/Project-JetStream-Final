@@ -8,7 +8,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
 
-import { colors } from '@/theme';
+import { colors } from '../theme';
 
 // Screens
 import HomeScreen from '../screens/HomeScreen';
